@@ -60,16 +60,47 @@ body{
  }
  .menu-departamentos{
      clear:left;
+     margin-top: 5px;
  }
- .busca{
-     padding-bottom:20px ;
+ .busca h2{
+    margin-left: 15px;
  }
  .busca form{
-     
+    margin-left: 15px;
  }
+ .busca{
+     border-radius: 5px;
+     font-style: italic;
+     font-family:  arial;
+     text-transform: uppercase;
+     width:230px;
+     float:left;
+     display: inline-block;
+     padding-bottom:20px ;
+     background-color: #dcdcdc;
+ }
+ .busca {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
  .busca input[type=search] {
      width: 170px;
  }
+ .busca button {
+    background-image: url(../imagens/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+   }
+   .busca input {
+	vertical-align: middle;
+}
+
+.busca input[type=search] {
+	width: 170px;
+}
  .menu-departamentos h2{
      margin:10px;
      font-size: 19px;
@@ -77,7 +108,7 @@ body{
  .menu-departamentos{
      font-size: 19px;
      float:left;
-     clear:left;
+     clear:both;
  }
  .menu-departamentos li{
      background:white;
@@ -94,14 +125,13 @@ body{
      text-decoration:none;
  }
  .menu-departamentos{
-     margin-top:10px;
      padding-bottom:10px;
  }
  .destaque {
    margin-top: 10px;
  }
  .menu-departamentos {
-   margin-top: 10px;
+
    padding-bottom: 10px;
  }
  .banner-destaque img{
@@ -114,15 +144,43 @@ body{
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
+    transition: 0.7s;
 }
+.painel li:hover {
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    transform: scale(1.2)rotate(-5deg);
+  }
+  .painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+  }
 .painel {
    margin: 10px 0;
    padding: 10px;
    width: 490px;
+   border-radius: 6px;
+   box-shadow:1px 1px 4px #999;
+}
+.painel {
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+  }
+.painel h2{
+    text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
 }
 .novidades{
     float:left;
+    background: linear-gradient(#f5dcdc, #bebef4);
 }
+
+.novidades {
+    background: linear-gradient(#f5dcdc, #bebef4);
+  }
+  .mais-vendidos {
+    background: linear-gradient(#dcdcf5, #f4bebe);
+  }
+  
 .mais-vendidos{
     float:right;
 }
@@ -139,6 +197,7 @@ body{
    font-weight: bold;
    text-transform: uppercase;
    margin-bottom: 10px;
+   text-shadow:3px 3px 5px white;
  }
 
  .painel a {
